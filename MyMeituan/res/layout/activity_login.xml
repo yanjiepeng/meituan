@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/linearlayout_activity_login_bar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/abc_ic_ab_back_holo_light" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/btn_fragment_login" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_activity_login_register"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:layout_marginLeft="180dp"
+            android:textColor="@color/orange"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="center"
+            android:text="@string/tv_activity_login_register" />
+    </LinearLayout>
+    
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_phone_activity_login"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/tv_phone_activity_login" />
+
+        <View
+            android:layout_width="0.1dp"
+            android:layout_height="50dp"
+            android:background="@color/gray" />
+
+        <TextView
+            android:id="@+id/tv_password_activity_login"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/tv_password_activity_login" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/gray" />
+
+    <LinearLayout
+        android:id="@+id/linearlayout_activity_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+</LinearLayout>

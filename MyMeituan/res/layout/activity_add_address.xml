@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearlayout_activity_address"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"
+            android:src="@drawable/abc_ic_ab_back_holo_light" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:text="@string/activity_address" />
+
+        <ImageButton
+            android:id="@+id/ibtn_activity_add_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:src="@drawable/abc_ic_cab_done_holo_light" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/gray" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/tv_contacts_activity_add_address" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="@string/tv_name_activity_add_address" />
+
+            <EditText
+                android:id="@+id/et_putname_activity_add_address"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:background="@null"
+                android:hint="@string/et_putname_activity_add_address"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/gray" />
+        <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+         >
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cb_man_activity_add_address" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cb_woman_activity_add_address" />
+    </RadioGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="@string/tv_phone_activity_add_address" />
+
+            <EditText
+                android:id="@+id/et_putphone_activity_add_address"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:background="@null"
+                android:inputType="number"
+                android:hint="@string/et_putphone_activity_add_address"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/gray" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/tv_address_activity_add_address" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout_address_activity_add_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/tv_map_address_activity_add_address" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/address" />
+
+            <EditText
+                android:id="@+id/et_map_address_activity_add_address"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center"
+                android:text="@string/et_map_address_activity_add_address"
+                android:textSize="14dp" />
+        </LinearLayout>
+        <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/gray" />
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="2"
+                android:text="@string/tv_number_activity_add_address" />
+
+            <EditText
+                android:id="@+id/et_number_activity_add_address"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:background="@null"
+                android:hint="@string/et_number_activity_add_address"
+                android:textSize="12dp" />
+        </LinearLayout>
+        <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/gray" />
+    </LinearLayout>
+
+</LinearLayout>

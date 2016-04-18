@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativelayout_mycount_my"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/takeout_bg_mine_user" >
+
+        <TextView
+            android:id="@+id/tv_mycount_my"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="18dp"
+            android:text="登陆/注册" />
+
+        <ImageView
+            android:id="@+id/iv_mycount_my"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/takeout_ic_avatar_default" />
+    </RelativeLayout>
+
+    <!-- 美团外卖的我的登录界面的钱包、红包以及代金券行 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@color/halfgrey"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/linearlayout__money_my"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingTop="5dp" >
+
+            <!-- 美团外卖的我的登录界面的钱包 -->
+
+            <LinearLayout
+                android:id="@+id/linearlayout_wallet_my"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="4dp"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_wallte_my"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/wallet" />
+
+                <LinearLayout
+                    android:id="@+id/linearlayout_wallte_content_my"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/iv_wallte_my"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/wallet_meituan" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="2"
+                        android:text="@string/wallet_meituan"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 美团外卖的我的登录界面的红包 -->
+
+            <LinearLayout
+                android:id="@+id/linearlayout_red_packet_my"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_marginBottom="4dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_red_packet_my"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/red_packet" />
+
+                <LinearLayout
+                    android:id="@+id/linearlayout_red_packet_content_my"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/iv_red_packet_my"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/red_packet_meituan" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="2"
+                        android:text="@string/red_packet_meituan"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 美团外卖的我的登录界面的代金券 -->
+
+            <LinearLayout
+                android:id="@+id/linearlayout_cash_coupon_my"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_marginBottom="4dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_cash_coupon_my"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/cash_coupon" />
+
+                <LinearLayout
+                    android:id="@+id/linearlayout_cash_coupon_content_my"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/iv_cash_coupon_my"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/cash_coupon_business" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="@string/cash_coupon_business"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/linecolor" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/linecolor" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <!-- 美团外卖的我的登录界面的管理收货地址 -->
+
+            <LinearLayout
+                android:id="@+id/linearlayout_address_my"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/address" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:text="@string/address"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/linecolor" />
+
+            <!-- 美团外卖的我的登录界面的我的收藏 -->
+
+            <LinearLayout
+                android:id="@+id/linearlayout_myfavorite_my"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/myfavorite" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:text="@string/myfavorite"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/linecolor" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/linecolor" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <!-- 美团外卖的我的登录界面的帮助与反馈 -->
+
+            <LinearLayout
+                android:id="@+id/linearlayout_help_my"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/help" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:text="@string/help"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/linecolor" />
+            <!-- 美团外卖的我的登录界面的更多 -->
+
+            <LinearLayout
+                android:id="@+id/linearlayout_more_my"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/more" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:text="@string/more"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/linecolor" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@color/white" >
+
+            <TextView
+                android:id="@+id/tv_tel_my"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="@string/tel"
+                android:textColor="@color/ginger"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="@string/service_time" />
+    </LinearLayout>
+
+</LinearLayout>

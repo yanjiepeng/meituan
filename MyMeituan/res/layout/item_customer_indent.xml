@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_customer_indent_item_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/tv_customer_indent_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="广东卤记茶餐厅"
+            android:textSize="18dp" />
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/tv_customer_indent_item_name"
+            android:src="@drawable/customer_indent_item_title" />
+
+        <TextView
+            android:id="@+id/tv_customer_indent_item_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:text="订单完成"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/half_darkgrey" />
+
+    <RelativeLayout
+        android:id="@+id/rl_customer_indent_item_sketch"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@+id/iv_customer_indent_item_icon"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/test_customer_indent_item_sketch" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/iv_customer_indent_item_icon"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_customer_indent_item_price"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:text="￥18"
+                android:textColor="@color/orangered"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tv_customer_indent_item_time"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:gravity="bottom"
+                android:text="12-23 10:34"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/tv_customer_indent_item_distribution"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:gravity="bottom"
+                android:text="由约饭专送提供高品质配送服务"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_customer_indent_item_delet"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/shape_customer_indent_delet_button"
+            android:text="删除"
+            android:textSize="15dp"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/v_customer_indent_item"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/half_darkgrey" />
+
+    <RelativeLayout
+        android:id="@+id/rl_customer_indent_item_onemore"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white" >
+
+        <Button
+            android:id="@+id/btn_customer_indent_item_onemore"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/shape_customer_indent_onemore_button"
+            android:text="再来一单"
+            android:textSize="12dp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/v_listview_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/half_darkgrey" />
+
+</LinearLayout>

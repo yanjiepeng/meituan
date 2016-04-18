@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.example.widget.CustomerIndentListView
+        android:id="@+id/lv_customer_order_information"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:dividerHeight="0dp"
+        android:headerDividersEnabled="false" />
+     <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/half_darkgrey" />
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <Button 
+            android:id="@+id/btn_customer_order_onemore"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="再来一单"
+            android:background="@drawable/shape_customer_indent_delet_button"
+            android:layout_margin="10dp"/>
+    </RelativeLayout>
+
+</LinearLayout>

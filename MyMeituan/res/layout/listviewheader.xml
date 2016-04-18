@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_location_main"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/ginger"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/bt_restartlocation_main"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:button="@null"
+            android:background="@drawable/iconfontlocate"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/et_showlocation_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/xlistview_header_location"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_ad_main"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_point_main"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#44000000"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/indicator1_main"
+            style="@style/point_image" />
+
+        <ImageView
+            android:id="@+id/indicator2_main"
+            style="@style/point_image"
+            android:layout_marginLeft="5dp" />
+
+        <ImageView
+            android:id="@+id/indicator3_main"
+            style="@style/point_image"
+            android:layout_marginLeft="5dp" />
+
+        <ImageView
+            android:id="@+id/indicator4_main"
+            style="@style/point_image"
+            android:layout_marginLeft="5dp" />
+
+        <ImageView
+            android:id="@+id/indicator5_main"
+            style="@style/point_image"
+            android:layout_marginLeft="5dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#ffffffff" />
+
+    <LinearLayout
+        android:id="@+id/ll_belowAD_main"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/ginger"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <com.example.util.TextScroll
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:layout_weight="2"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:gravity="center"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="@string/xlistview_footer_AD_scrolltext"
+            android:textColor="@color/recommand_foodtext_color"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_recommand_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:background="#22ff0000"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/ll_left_firstfoodrecommend_firstpager"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/leftfirst" />
+
+                <TextView
+                    android:id="@+id/left_firstfoodrecommend_firstpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/left_firstfoodrecommend" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_left_secondfoodrecommend_firstpager"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1.5"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/leftsec" />
+
+                <TextView
+                    android:id="@+id/left_secondfoodrecommend_firstpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/left_firstfoodrecommend" />
+            </LinearLayout>
+
+            <LinearLayout
+                 android:id="@+id/ll_left_thirdfoodrecommend_firstpager"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1.5"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/leftthrid" />
+
+                <TextView
+                    android:id="@+id/left_thirdfoodrecommend_firstpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/left_firstfoodrecommend" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_left_forthfoodrecommend_firstpager"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1.5"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/leftfor" />
+
+                <TextView
+                    android:id="@+id/left_forthfoodrecommend_firstpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/left_firstfoodrecommend" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#ffffffff" />
+
+</LinearLayout>

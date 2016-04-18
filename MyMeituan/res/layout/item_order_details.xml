@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="500dp"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/half_darkgrey"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:text="订单详情"
+        android:textSize="15dp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_customer_order_storename"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <TextView
+            android:id="@+id/tv_customer_order_storename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="15dp"
+            android:text="广东卤记茶餐厅"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/customer_indent_item_title" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/half_darkgrey" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <TextView
+            android:id="@+id/tv_customer_order_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="15dp"
+            android:text="黄焖鸡米饭"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv_customer_order_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:text="￥25"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv_customer_order_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@id/tv_customer_order_price"
+            android:text="￥25*1"
+            android:textColor="@color/darkgray"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/half_darkgrey" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="15dp"
+            android:text="配送费"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv_customer_order_distribution_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:text="￥1"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/half_darkgrey" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <TextView
+            android:id="@+id/tv_customer_order_total_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:text="￥26"
+            android:textColor="@color/red"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@id/tv_customer_order_total_price"
+            android:text="实付"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+</LinearLayout>

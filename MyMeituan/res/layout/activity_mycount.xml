@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearlayout_activity_mycount"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"
+            android:src="@drawable/abc_ic_ab_back_holo_light" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:text="@string/activity_mycount" />
+    </LinearLayout>
+   <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/gray" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/relativelayout_icon_activity_mycount"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+             >
+
+            <TextView
+                android:id="@+id/tv_icon_activity_mycount"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/icon_activity_mycount" />
+
+            <ImageView
+                android:id="@+id/iv_icon_activity_mycount"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="32dp"
+                android:background="@drawable/ic_launcher" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray" />
+
+        <RelativeLayout
+            android:id="@+id/relativelayout_username_activity_mycount"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:id="@+id/tv_username_activity_mycount"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="muhua55" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="32dp"
+                android:gravity="center"
+                android:text="@string/tv_username_updata_activity_mycount" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray" />
+
+        <TextView
+            android:id="@+id/tv_password_updata_activity_mycount"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:text="@string/tv_password_updata_activity_mycount" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray" />
+
+        <RelativeLayout
+            android:id="@+id/relativelayout_number_activity_mycount"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:padding="5dp"
+                android:text="@string/tv_number_activity_mycount" />
+
+            <TextView
+                android:id="@+id/tv_user_number_activity_mycount"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="32dp"
+                android:padding="5dp"
+                android:text="@string/tv_user_number_activity_mycount" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/gray" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_exit_activity_mycount"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="34dp"
+        android:background="@color/orange"
+        android:text="@string/btn_exit_activity_mycount" />
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_guide_switch_bar"
+    android:layout_width="209dp"
+    android:layout_height="50dp"
+    android:layout_gravity="center"
+    android:background="@color/transparent">
+    <Button 
+        android:id="@+id/btn_switch_bar_1"
+        android:layout_height="16dp"
+        android:layout_width="16dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="29dp"
+        android:background="@drawable/shape_guide_switch_bar_button"/>
+    <Button 
+        android:id="@+id/btn_switch_bar_2"
+        android:layout_height="16dp"
+        android:layout_width="16dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="74dp"
+        android:background="@drawable/shape_guide_switch_bar_button"/>
+    <Button 
+        android:id="@+id/btn_switch_bar_3"
+        android:layout_height="16dp"
+        android:layout_width="16dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="119dp"
+        android:background="@drawable/shape_guide_switch_bar_button"/>
+    <Button 
+        android:id="@+id/btn_switch_bar_4"
+        android:layout_height="16dp"
+        android:layout_width="16dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="164dp"
+        android:background="@drawable/shape_guide_switch_bar_button"/>
+
+</RelativeLayout>

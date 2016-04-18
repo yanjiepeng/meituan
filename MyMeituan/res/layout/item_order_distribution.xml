@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="500dp"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/half_darkgrey"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:text="配送信息"
+        android:textSize="15dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <TextView
+            android:id="@+id/temp_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="15dp"
+            android:text="期望时间"
+            android:textColor="@color/darkgray"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv_customer_order_expect_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/temp_time"
+            android:text="12月23日  11:50"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/half_darkgrey" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <TextView
+            android:id="@+id/temp_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="15dp"
+            android:text="配送地址"
+            android:textColor="@color/darkgray"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv_customer_order_customer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/temp_address"
+            android:text="杨佳琨（先生） 18990796463"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <TextView
+            android:id="@+id/temp_address1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="15dp"
+            android:text="配送地址"
+            android:textColor="@color/darkgray"
+            android:textSize="15dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tv_customer_order_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/temp_address1"
+            android:text="北京华清远见科技信息公司"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/half_darkgrey" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <TextView
+            android:id="@+id/temp_distribution"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="15dp"
+            android:text="配送服务"
+            android:textColor="@color/darkgray"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv_customer_order_distribution"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/temp_distribution"
+            android:text="约饭专送"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+</LinearLayout>
